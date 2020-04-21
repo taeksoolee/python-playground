@@ -1,0 +1,14 @@
+python crawling
+
+1. python/scripts 경로 path 등록 (pip 명령어 사용가능하게함)
+2. pip install requests beautifulsoup4 (패키지 다운로드)
+
+//---------------------------------
+
+from urllib.request import urlopen
+form bs4 import BeautifulSoup
+
+html = urlopen("http://www.naver.com")
+bsObject = BeautifulSoup(html, "html.parser")
+
+print bsObject
